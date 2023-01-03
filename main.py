@@ -79,10 +79,6 @@ def get_stock_data(ticker):
   except:
        return
 
-  Sektor = ti['sector']
-  beta = ti['beta']
-  Land = ti['country']
-  Preis = ti["currentPrice"]
 
   Anlagevermögen = output_bs[0]["totalNonCurrentAssets"]
   Eigenkapital = output_bs[0]["totalEquity"]
