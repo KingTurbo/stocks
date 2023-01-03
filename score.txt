@@ -1,0 +1,24 @@
+Die max. Anzahl der erreichbaren Punkte ist: 24
+Ich übernehme keine Haftung für eventuelle Verluste oder Gewinne, die aufgrund der Verwendung der von mir bereitgestellten Informationen entstehen. 
+Hier sind die Bedingungen, die erfüllt sein müssen:
+
+Wenn LIQ3 größer als 2 ist, wird score um 2 erhöht. Wenn LIQ3 nicht größer als 2 ist, wird geprüft, ob LIQ3 größer als 1 ist. Wenn dies der Fall ist, wird score um 1 erhöht.
+Wenn LIQ2 größer als 1 ist, wird score um 2 erhöht.
+Wenn LIQ1 kleiner als 0,3 ist, wird score um 2 erhöht.
+Wenn das Verhältnis von Schulden zu Eigenkapital (DebttoEquityRatio) kleiner als 1 ist, wird score um 0,5 erhöht.
+Wenn der Zinsdeckungsgrad (Zinsdeckungsgrad) nicht None ist, wird geprüft, ob Zinsdeckungsgrad größer als 10 ist. Wenn dies der Fall ist, wird score um 1,5 erhöht. Wenn Zinsdeckungsgrad nicht größer als 10 ist, aber größer als 3, wird score um 0,5 erhöht. Wenn Zinsdeckungsgrad None ist, wird die Funktion beendet.
+Wenn das Kurs-Buchwert-Verhältnis (KBV) größer als 1 ist, wird score um 1 erhöht.
+Wenn das Kurs-Umsatz-Verhältnis (KUV) kleiner als der Wert Kuv_vg ist, wird score um 1 erhöht.
+Wenn das Kurs-Gewinn-Verhältnis (KGV) kleiner als der Wert kgv_vg ist, wird score um 1 erhöht.
+Wenn das Kurs-Cashflow-Verhältnis (KCV) kleiner als der Wert kcv_vg ist, wird score um 1 erhöht.
+Wenn das PEG-Verhältnis (PEGRatio) kleiner als 0,5 ist, wird score um 3 erhöht. Wenn PEGRatio nicht kleiner als 0,5 ist, aber kleiner als 1, wird score um 1 erhöht.
+Wenn der Deckungsgrad A (DeckungsgradA) größer oder gleich 0,7 ist, wird score um 1 erhöht.
+Wenn der Deckungsgrad A (DeckungsgradA) größer oder gleich 0,7 ist, wird score um 1 erhöht.
+Wenn der Deckungsgrad B (DeckungsgradB) größer als 1 ist, wird score um 1 erhöht.
+Wenn das Umsatzwachstum (Umsatzwachstum) größer als 0,1 ist, wird score um 1 erhöht. Wenn Umsatzwachstum nicht größer als 0,1 ist, aber größer oder gleich 0,05, wird score um 0,5 erhöht.
+Wenn das Nettowachstum (Nettowachstum) größer als 0,1 ist, wird score um 1 erhöht. Wenn Nettowachstum nicht größer als 0,1 ist, aber größer oder gleich 0,05, wird score um 0,5 erhöht.
+Wenn der Bruttogewinn (Bruttogewinn) größer oder gleich 0,5 ist, wird score um 1 erhöht.
+Wenn die Forschung (Forschung) größer als 0 ist, wird score um 1 erhöht.
+Wenn das EBITDA-Wachstum (EBITDA_growth) größer als 0 ist, wird score um 1 erhöht.
+Wenn das Return on Assets (ROA) größer als der Wert wacc ist und größer als das ROA des Vorjahres (ROA_ly), wird score um 1 erhöht. Wenn ROA nicht größer als wacc ist, aber größer als ROA_ly, wird score um 0,5 erhöht.
+Wenn das Return on Equity (ROE) größer oder gleich dem ROE des Vorjahres (ROE_ly) und größer oder gleich 0,3 ist, wird score um 1 erhöht.
